@@ -1,5 +1,17 @@
 /* styles.css */
 
+@font-face {
+    font-family: "BebasNeue";
+    src: url(../odin-recipes/fonts/BebasNeue-Regular.ttf);
+    /* src: url('../odin-recipes/fonts/BebasNeue-Regular.eot');
+      src: url('../odin-recipes/fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),
+           url('../odin-recipes/fonts/BebasNeue-Regular.woff2') format('woff2'),
+           url('../odin-recipes/fonts/BebasNeue-Regular.woff') format('woff'),
+           url('../odin-recipes/fonts/BebasNeue-Regular.ttf') format('truetype'),
+           url('../odin-recipes/fonts/BebasNeue-Regular.svg#besom_2regular') format('svg'); 
+           commented out until I find out if this is necessary to have, currently only have the .tff file. supposedly this enables font support for as many browsers as possible */ 
+}
+
 .page-style {
     background-image: url(background.jpeg);
     background-repeat: no-repeat;
@@ -10,5 +22,17 @@
 .headline {
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
+    font-family: "BebasNeue";
+}
+
+.recipes-flex-container {
+    display: flex;
+    height: 700px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.recipes-link-styling {
+    background-color: white;
 }
