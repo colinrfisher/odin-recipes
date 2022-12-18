@@ -11,3 +11,4 @@ Goals:
 Edit 12/17/22
     - Changed styling to use an image background and white/gray colorway for simplicity for now.
     - Removed Mr. Dos Equis. 
+    - Need to fix text resizing to fit containers when hovering over links on homepage.
