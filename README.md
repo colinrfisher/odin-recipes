@@ -7,3 +7,7 @@ Goals:
     - Utilize the classic BMW colorway for the site design when CSS is introduced.
     - Have the Dos Equis guy on the homepage.
     - Structure content to easily be styled with CSS in future iterations.
+
+Edit 12/17/22
+    - Changed styling to use an image background and white/gray colorway for simplicity for now.
+    - Removed Mr. Dos Equis. 
