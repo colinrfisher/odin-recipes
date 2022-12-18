@@ -10,29 +10,81 @@
            url('../odin-recipes/fonts/BebasNeue-Regular.ttf') format('truetype'),
            url('../odin-recipes/fonts/BebasNeue-Regular.svg#besom_2regular') format('svg'); 
            commented out until I find out if this is necessary to have, currently only have the .tff file. supposedly this enables font support for as many browsers as possible */ 
-}
+} /* declares a new font family for the headline fonts */
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+} /* removes text decoration for recipe links so they can be customized */
+
+.recipe-flex-container {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 75px 0;
+} /* set alignment of all page content */
+
+.list-align {
+    display: inline-block;
+    text-align: left;
+} /* set alignment of list NOTE : NOT PERFECT NEED TO FIX*/
+
+.recipe-header-style {
+    font-size: 30px;
+    padding: 25px;
+} /* set font size of recipe headers */
+
+.recipe-description-width {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+} /* set width of recipe description container to prevent text running from edge to edge of page */
 
 .page-style {
     background-image: url(background.jpeg);
+    background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
+} /* properties for page-style */
 
 .headline {
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 50px;
     font-family: "BebasNeue";
-}
+} /* properties for page headlines */
 
-.recipes-flex-container {
+.link-flex-container { 
     display: flex;
     height: 700px;
     justify-content: space-evenly;
     align-items: center;
-}
+} /* flex container for the group of link divs to center and space it on the page */
 
-.recipes-link-styling {
+.div-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: white;
-}
+    opacity: 0.25;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+} /* flex container for the recipe links that are nested within the link-flex-container to properly style the links */
+
+.link-styling {
+    color: black;
+    font-size: 25px;
+} /* set color and font size of link text */
+
+.link-transition {
+    transition: width 4s height 4s;
+    transition-timing-function: ease-in;
+} /* enables size transition of link divs */
+
+.link-transition:hover {
+    width: 160px;
+    height: 160px;
+} /* enables the link transition to occur when hovered over with mouse */
